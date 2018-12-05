@@ -103,15 +103,15 @@
 
 \section{Agent-Environment Interface}
 \includegraphics[width=\linewidth]{./images/Agent-Environment.png}
-The Agent at each step $t$ receives a representation of the environment's \emph{state}, $S_t \in S$ and it selects an action $A_t \in A(s)$. Then, as a consequence of its action the agent receives a \emph{reward}, $R_{t + 1} \in R \in \mathbb{R}$.
+The Agent at each step $t$ receives a representation of the environment's \emph{state}, $s_t \in S$ and it selects an action $a_t \in A(s)$. Then, as a consequence of its action the agent receives a \emph{reward}, $r_{t + 1} \in R \in \mathbb{R}$.
 
 \section{Policy}
-A \emph{policy} is a mapping from a state to an action
+A \emph{policy} is a mapping from a state to an action which determines action an agent will take while in the particular state
 \begin{equation}
-\pi_t(s|a)
+\pi(a|s)
 \label{eq: policy}
 \end{equation}
-That is the probability of select an action $A_t = a$ if $S_t = s$.
+That is the probability of select an action $a_t = a$ if $s_t = s$.
 
 \newlength{\MyLen}
 \settowidth{\MyLen}{\texttt{letterpaper}/\texttt{a4paper} \ }
